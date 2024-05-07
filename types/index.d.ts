@@ -1,5 +1,8 @@
 /* eslint-disable no-unused-vars */
 
+import { FieldValue } from "react-hook-form";
+import { ZodFirstPartySchemaTypes } from "zod";
+
 declare type SearchParamProps = {
   params: { [key: string]: string };
   searchParams: { [key: string]: string | string[] | undefined };
@@ -325,4 +328,11 @@ declare interface getBankProps {
 
 declare interface getBankByAccountIdProps {
   accountId: string;
+}
+
+declare interface customInputProps {
+  form: any;
+  name: string;
+  label: string;
+  placeholder: string;
 }
