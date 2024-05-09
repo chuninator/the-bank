@@ -6,11 +6,17 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { z } from "zod";
 
-const CustomInput = ({ form, name, label, placeholder }: customInputProps) => {
+const CustomInput = ({
+  control,
+  name,
+  label,
+  placeholder,
+}: customInputProps) => {
   return (
     <FormField
-      control={form.control}
+      control={control}
       name={name}
       render={({ field }) => (
         <div className="form-item">

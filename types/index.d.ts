@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 
-import { FieldValue } from "react-hook-form";
+import { authFormSchema } from "@/lib/utils";
+import { Control, FieldValue } from "react-hook-form";
 import { ZodFirstPartySchemaTypes } from "zod";
 
 declare type SearchParamProps = {
@@ -331,7 +332,7 @@ declare interface getBankByAccountIdProps {
 }
 
 declare interface customInputProps {
-  form: any;
+  control: Control<z.infer<typeof authFormSchema>>;
   name: string;
   label: string;
   placeholder: string;
