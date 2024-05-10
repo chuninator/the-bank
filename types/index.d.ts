@@ -333,7 +333,7 @@ declare interface getBankByAccountIdProps {
 
 declare interface customInputProps {
   control: Control<z.infer<typeof authFormSchema>>;
-  name: string;
+  name: FieldPath<z.inferM<typeof authFormSchema>>;
   label: string;
   placeholder: string;
 }
