@@ -4,7 +4,6 @@ import Link from "next/link";
 import React from "react";
 
 const BankCard = ({
-  user,
   account,
   userName,
   showBalance = true,
