@@ -4,6 +4,7 @@ import { ID } from "node-appwrite";
 import { createAdminClient, createSessionClient } from "../appwrite";
 import { cookies } from "next/headers";
 import { parseStringify } from "../utils";
+import { SignUpParams } from "@/types";
 
 export const signIn = async () => {
   try {
